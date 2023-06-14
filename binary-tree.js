@@ -14,6 +14,9 @@ class BinaryTreeNode {
    * a node with less than two children. */
   minDepthToIncompleteNode() {
 
+    if (!this.left || !this.right) return minDepth;
+    currDepth++
+
   }
 
   /** maxDepth(): return the maximum depth from the invoking node -- that is,
@@ -41,7 +44,8 @@ class BinaryTree {
   // this is a stack or recursion problem; we'll use recursion
 
   minDepthToIncompleteNode() {
-
+    if (this.root === null) return 0;
+    //otherwise ....
   }
 
   /** maxDepth(): return the maximum depth of the tree -- that is,
